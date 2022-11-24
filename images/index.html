@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TRAVEL AGENCY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html>" <img src="images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">TOUR PLANS</a></li>
+            <li><a href="">BOOK NOW</a></li>
+
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>WORLD'S BIGGEST TRAVEL AGENCY</h1>
+        <p></p>
+        <p>Discover New Places With Us</p>
+        <a href="" class="hero-btn">Visit us to know More </a>
+      </div>
+    </section>
+
+    <!-----TourPlans-------->
+    <section class="Tourplans">
+      <h1>Tour Plans</h1>
+      <p>Packages we offer</p>
+      <section class="packages" id="packages">
+        <h1 class="heading">
+          <span>G</span>
+          <span>R</span>
+          <span>A</span>
+          <span>B</span>
+          <span class="space"></span>
+          <span>N</span>
+          <span>O</span>
+          <span>W</span>
+        </h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="images/p-1" alt="" />
+            <div class="content">
+              <h3><i class="city of mumabi"></i> mumbai</h3>
+              <p>dfbfabfabfuafuahaifhafhsaihaohsafhsaofhsaofhasi</p>
+              <div class="stars">
+                <i class="fas fa=star"></i>
+                <i class="fas fa=star"></i>
+                <i class="fas fa=star"></i>
+                <i class="fas fa=star"></i>
+                <i class="fas fa=star"></i>
+                <i class="far fa=star"></i>
+              </div>
+              <div class="price">$90.00<span>$120.00</span></div>
+              <a href="#" class="btn">book now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-------BOOKNOW------>
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+      <div class="rows">
+        <div class="image">
+          <img src="images/book.jpeg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputbox">
+            <h2>Where To</h2>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputbox">
+            <h2>How many tickets</h2>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputbox">
+            <h2>Arrival date</h2>
+            <input type="date" />
+          </div>
+          <div class="inputbox">
+            <h2>Leaving date</h2>
+            <input type="date" />
+          </div>
+          <div>
+            <input type="submit" class="btn" value="book now" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!------packages----->
+
+    <!-------JavaScript for Toggle Menu----->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
