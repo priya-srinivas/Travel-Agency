@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TRAVEL AGENCY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html>" <img src="images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="book.html">BOOK NOW</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text">
+        <h1>"A journey of a thousand miles begins with a single step"</h1>
+     </div>
+     
+    </section>
+
+    <!-------BOOKNOW------>
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+      <div class="rows">
+        <div class="image">
+          <img src="images/book.jpeg" alt="" />
+        </div>
+        <form action="">
+          <div class="inputbox">
+            <h2>Where To</h2>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputbox">
+            <h2>How many tickets</h2>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputbox">
+            <h2>Arrival date</h2>
+            <input type="date" />
+          </div>
+          <div class="inputbox">
+            <h2>Leaving date</h2>
+            <input type="date" />
+          </div>
+          <div>
+            <input type="submit" class="btn" value="book now" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-------JavaScript for Toggle Menu----->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About Us</h3>
+          <p>
+            Make Travel provides a different types of packages both domestic and
+            international. Plan your trip with us from the comfort of your home.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Branch locations</h3>
+          <a href="#">All over India </a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">Book now</a>
+          <a href="#">About Us</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        created by <span> Ms. Gopika J </span> | all rights reserved!
+      </h1>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TRAVEL AGENCY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="contactpg">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="book.html">BOOK NOW</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+      
+    </section>
+    <!-------JavaScript for Toggle Menu----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+          navLinks.style.right = "0";
+        }
+        function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+      </script>
+
+      <!--services section starts-->
+
+    <section class="services" id="services">
+        <h1 class="heading">
+          <span>S</span>
+          <span>E</span>
+          <span>R</span>
+          <span>V</span>
+          <span>I</span>
+          <span>C</span>
+          <span>E</span>
+          <span>S</span>
+        </h1>
+  
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Hotels</h3>
+            <p>
+              We offer rooms in hotels which look decent and trustable. we offer
+              all the facilities inside the hotel.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>
+              We provide sounthern and northern food time to time. We also provide
+              snacks during evening time. Foods are made with the hands of our
+              chefs who are there in respected locations.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety guide</h3>
+            <p>
+              We provide 100% security and safe travel. Vehicles conditions are
+              examined before every travel. We provide a guide for every travel
+              who is aware of all the rules and regulations of the travel
+              location.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Around the world</h3>
+            <p>
+              we provide our best services to travelers around the world. We build
+              valuablerelationships with our customers by providing them with innovative
+              tour packages and personalised care.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Bills/Payments</h3>
+            <p>
+              We often provide with offers and discounts for our lovely customers. TA is 
+              meant for value oriented-pricing and flexible payment structure. 
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Helping Hands</h3>
+            <p>
+              Medical items can delivery for the travellers upon their request
+              with extra charges.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- services section ends -->
+  
+  
+      <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About Us</h3>
+          <p>
+            Make Travel provides a different types of packages both domestic and
+            international. Plan your trip with us from the comfort of your home.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Branch locations</h3>
+          <a href="#">All over India </a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">Book now</a>
+          <a href="#">About Us</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        created by <span> Ms.Priya Srinivas </span> | all rights reserved!
+      </h1>
+    </section>
+  </body>
+</html>
